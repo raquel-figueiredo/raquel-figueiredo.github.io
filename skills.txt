@@ -1,0 +1,16 @@
+Digital Experience
+
+- User Interface: desenvolvimento de interfaces do usuário, sendo elas interativas ou não, para web e mobile.
+
+- User Experience: desenvolvimento de experiências focadas no usuário final de algum produto em desenvolvimento ou cases de sucesso.
+
+- Design Thinking: uso da metodologia em grandes projetos afim de facilitar e agilizar o processo e desenvolvimento de um determinado produto. Utilizo muito em workshops e palestras interativas.
+
+- Lean UX: metologia que normalmente uso em projetos de urgência ou com prazos mais curtos, afim de agilizar o processo e realizar uma entrega de sucesso.
+
+Games
+- Game Design: a parte em que eu mais gosto de trabalhar quando no mundo dos games. Com os diversos conhecimentos e prática adquiridos ao longo dos anos, consigo ajudar na criação e projeção de um jogo.
+
+- GDD: Game Design Document, possuo experiência prática nesse tipo de documento
+
+- Animação 2D e 3D: 
