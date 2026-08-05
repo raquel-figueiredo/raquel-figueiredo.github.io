@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welbe Care — Raquel Figueiredo</title>
+<meta name="description" content="Historia Clínica, the quota-aware Compra de Estudios Médicos marketplace, and the Welbe 2.0 Design System — three connected case studies from Welbe's healthcare ecosystem.">
+<link rel="canonical" href="https://raquel-figueiredo.github.io/work-welbe.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Welbe Care — Raquel Figueiredo">
+<meta property="og:description" content="Historia Clínica, a quota-aware healthcare marketplace, and the Welbe 2.0 Design System.">
+<meta property="og:url" content="https://raquel-figueiredo.github.io/work-welbe.html">
+<meta property="og:image" content="https://raquel-figueiredo.github.io/images/welbe-capa.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "Welbe Care — Historia Clínica, Compra de Estudios Médicos, Design System",
+  "creator": { "@type": "Person", "name": "Raquel Figueiredo" },
+  "about": "Three connected product design case studies from Welbe's healthcare ecosystem."
+}
+</script>
+<style>
+  /* ===== Welbe case mockup components (page-scoped, product-brand colors kept intentionally distinct from site theme) ===== */
+  .case{ padding: 56px 0; border-top: 1px solid var(--line); }
+  .case:first-of-type{ border-top: none; padding-top: 0; }
+  .case-tag{ font-family:'IBM Plex Mono',monospace; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color: var(--accent); font-weight:700; margin-bottom: 10px; }
+  .case-title{ font-family:'Plus Jakarta Sans',sans-serif; font-size: clamp(26px,3.4vw,38px); font-weight:800; color: var(--ink); margin: 0 0 8px; letter-spacing:-0.01em; }
+  .case-sub{ font-size: 16px; color: var(--ink-soft); margin: 0 0 36px; max-width: 700px; }
+
+  .wc-gallery{ display:flex; flex-wrap:wrap; gap:40px; justify-content:center; margin:36px 0 8px; }
+  .wc-figure{ text-align:center; }
+  .wc-figure-caption{ margin-top:14px; font-size:12px; color: var(--ink-soft); font-weight:600; }
+
+  .wc-phone{ width:280px; background:#0B1114; border-radius:40px; padding:12px; box-shadow:0 30px 50px -18px rgba(0,0,0,.35); }
+  .wc-phone-screen{ background:#fff; border-radius:28px; overflow:hidden; position:relative; height:568px; }
+  .wc-notch{ position:absolute; top:0; left:50%; transform:translateX(-50%); width:104px; height:22px; background:#0B1114; border-radius:0 0 14px 14px; z-index:10; }
+  .wc-screen-pad{ padding:38px 18px 14px; height:100%; box-sizing:border-box; overflow:hidden; font-size:12px; color:#1A2E2E; text-align:left; }
+  .wc-avatar{ width:24px; height:24px; border-radius:50%; background:#2ECC71; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+
+  .wc-browser{ width:100%; max-width:920px; }
+  .wc-browser-bar{ background:#D8DEDE; border-radius:12px 12px 0 0; padding:9px 14px; display:flex; align-items:center; gap:7px; }
+  .wc-dot{ width:10px; height:10px; border-radius:50%; display:inline-block; }
+  .wc-browser-url{ margin:0 auto; background:#F5F8F8; border-radius:6px; padding:3px 20px; font-size:10.5px; color:#5B6B6B; }
+  .wc-browser-body{ background:#fff; border-radius:0 0 12px 12px; box-shadow:0 30px 50px -18px rgba(0,0,0,.22); text-align:left; }
+
+  .wc-pill{ display:inline-block; padding:4px 10px; border-radius:20px; font-size:10px; font-weight:700; }
+  .wc-pill-green{ background:#E7F8EE; color:#1D9A4E; }
+  .wc-pill-yellow{ background:#FFF2D6; color:#9A6B00; }
+  .wc-pill-blue{ background:#E7F1FE; color:#1D6FC7; }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <a href="index.html" class="brand">Raquel Figueiredo<span>.</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav class="primary" id="primary-nav">
+      <a href="work.html" class="current" aria-current="page">Work</a>
+      <a href="about.html">About Me</a>
+      <div class="icon-links">
+        <a href="https://www.linkedin.com/in/figueiredoraquel" target="_blank" rel="noopener noreferrer" aria-label="Raquel Figueiredo on LinkedIn (opens in new tab)">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+
+    <section class="case-hero">
+      <a href="work.html" class="back-link">← Back to work</a>
+      <span class="kicker">Case Studies — Healthcare · B2B2C · Mexico</span>
+      <h1>Welbe Care</h1>
+      <p class="dek">Two journeys from Welbe's healthcare ecosystem — a clinical data model built with a medical-domain PM, and a quota-aware purchase experience built for enterprise scale — plus the shared design system underneath both.</p>
+    </section>
+
+
+
+<div class="case">
+    <div class="case-tag">Case Study 01</div>
+    <h2 class="case-title">Historia Clínica</h2>
+    <p class="case-sub">Structuring a longitudinal clinical record across patient, clinician, and enterprise touchpoints.</p>
+
+    <div class="meta-grid">
+      <div class="cell"><div class="k">Role</div><div class="v">Senior Product Designer</div></div>
+      <div class="cell"><div class="k">Timeline</div><div class="v">~1 week</div></div>
+      <div class="cell"><div class="k">Team</div><div class="v">1 PM (clinical background)</div></div>
+      <div class="cell"><div class="k">Platforms</div><div class="v">App/Web, WhatsApp, Doctor portal</div></div>
+    </div>
+
+    <h2 class="section-title first">Context</h2>
+    <div class="prose">
+    <p>Welbe's medical network had no structured way to capture a patient's clinical background before a consultation. Doctors started every appointment from zero — re-asking the same questions about allergies, chronic conditions, family history, and current medication — which slowed consultations down and left gaps in the data Welbe needed to power preventive-care analytics for its enterprise clients.</p>
+    <p>The goal was a <b>Historia Clínica</b> experience where patients complete their own medical background once, in plain language, while doctors get a standardized, code-based clinical record to rely on and build on at every subsequent visit.</p>
+    </div>
+    <h2 class="section-title">The Challenge</h2>
+    <div class="prose">
+    <p><b>Design question:</b> How might we let a layperson accurately self-report ten categories of sensitive health information, while feeding a data model rigorous enough for a doctor to use clinically?</p>
+    </div>
+    <ul class="check">
+      <li>A patient-facing questionnaire (mobile + web) simple enough for someone with no medical vocabulary.</li>
+      <li>A clinician-facing record (desktop) dense enough to review, correct, and extend live during a consultation.</li>
+      <li>Standardized diagnosis coding (ICD-10 / CIE-10), medication tracking, and per-condition detail.</li>
+      <li>A WhatsApp entry point for patients without easy app access.</li>
+      <li>Backoffice groundwork for enterprise-specific variants (e.g., a dedicated Bimbo version).</li>
+    </ul>
+
+    <h2 class="section-title">Discovery</h2>
+    <div class="prose">
+    <p>Unlike a typical discovery built on user interviews, this project's discovery was shaped by working directly with a Product Manager with a clinical background — translating medical requirements into the right questions, in the right order, with the right classification.</p>
+    </div>
+    <h4 class="sub-h">Stakeholder alignment</h4>
+    <div class="prose">
+    <p>Partnered with the PM to define clinical accuracy for every question, while keeping language understandable to a layperson.</p>
+    </div>
+    <h4 class="sub-h">Sequencing sensitive topics</h4>
+    <div class="prose">
+    <p>Mapped the ten-step patient journey, sequencing sensitive topics (family history, addictions, medication) so it felt progressive, not invasive.</p>
+    </div>
+    <h4 class="sub-h">Clinical requirements definition</h4>
+    <div class="prose">
+    <p>Defined, with the PM, which fields doctors needed to see and edit once patient data reached them — standardized coding, treatment status, comments.</p>
+    </div>
+    <h4 class="sub-h">AI-assisted organization</h4>
+    <div class="prose">
+    <p>Used Claude to organize the question set, structure the step-by-step flow, and accelerate wireframe exploration.</p>
+    </div>
+    <h2 class="section-title">Key UX Challenges</h2>
+    <ul class="check">
+      <li>Holding two audiences with opposite needs on the same underlying data.</li>
+      <li>A patient who needs low cognitive load, one decision per screen.</li>
+      <li>A doctor who needs density, speed, and completeness live in consultation.</li>
+      <li>Standardized medical classification (ICD-10/CIE-10) that stays precise while remaining quick to use.</li>
+      <li>Conditional answer states (default / answered-yes / answered-no) revealing detail only when relevant.</li>
+    </ul>
+
+    <h2 class="section-title">Design Process</h2>
+    <h4 class="sub-h">Information Architecture</h4>
+    <div class="prose">
+    <p>Ten sequential, self-contained steps for the patient; a persistent tab structure (A.H.F → A.P.P → A.P.N.P → Vaccines → Diagnostics → Medication) for the doctor.</p>
+    </div>
+    <h4 class="sub-h">User Flows &amp; Wireframes</h4>
+    <div class="prose">
+    <p>Mapped every patient path, including yes/no branching, alongside the doctor's review-and-edit flow. Validated both structures separately in low-fidelity before merging into one system.</p>
+    </div>
+    <h4 class="sub-h">Interface &amp; Prototyping</h4>
+    <div class="prose">
+    <p>One question per screen on mobile for patients; dense tables and standardized inputs on desktop for doctors. Built navigable prototypes for both, validated with the PM.</p>
+    </div>
+    <h4 class="sub-h">Handoff</h4>
+    <div class="prose">
+    <p>Documented the full solution, including new form-state components, and handed off to Engineering.</p>
+    </div>
+    <h2 class="section-title">Design System</h2>
+    <div class="prose">
+    <p>New reusable components contributed to Welbe 2.0: yes/no answer-state components, the antecedent row pattern, the ICD-10/CIE-10 lookup field, the progress-step header, and the clinical record tab navigation — all reused elsewhere at Welbe.</p>
+    </div>
+    <h2 class="section-title">Cross-functional Collaboration</h2>
+    <div class="prose">
+    <p>Unlike other Welbe projects, this one didn't involve a contested design decision to defend. The core challenge was translation — taking clinically precise requirements from a PM with medical training and shaping them into an experience two very different audiences could each use confidently, from the same data.</p>
+    </div>
+    <div class="wc-gallery">
+      <div class="wc-figure">
+        <div class="wc-phone"><div class="wc-phone-screen"><div class="wc-notch"></div><div class="wc-screen-pad">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:16px;">
+            <span style="font-size:18px; color:#004D50;">&#8592;</span>
+            <span style="font-weight:700; color:#00878E; font-size:14px;">Historia Clínica</span>
+            <div class="wc-avatar" style="margin-left:auto;"><svg width="13" height="13" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" fill="#fff"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+          </div>
+          <div style="font-size:10px; color:#8A9494; margin-bottom:4px;">Antecedentes laborales · 3 de 10</div>
+          <div style="height:5px; background:#E4EAEA; border-radius:4px; margin-bottom:14px; overflow:hidden;"><div style="width:32%; height:100%; background:#004D50;"></div></div>
+          <div style="border:1px solid #E4EAEA; border-radius:14px; padding:14px; display:flex; gap:10px; margin-bottom:18px;">
+            <div style="width:40px; height:40px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:18px; flex-shrink:0;">&#128119;</div>
+            <div><div style="font-weight:700; font-size:13px; margin-bottom:3px;">Antecedentes laborales</div><div style="font-size:11px; color:#5B6B6B; line-height:1.4;">Exposición a diferentes agentes durante tu historial laboral.</div></div>
+          </div>
+          <div style="font-weight:700; font-size:14px; margin-bottom:12px;">¿Has trabajado?</div>
+          <div style="display:flex; gap:8px;">
+            <div style="flex:1; text-align:center; padding:9px; border:2px solid #00878E; border-radius:10px; color:#00878E; font-weight:700; font-size:12px;">Sí</div>
+            <div style="flex:1; text-align:center; padding:9px; border:1.5px solid #E4EAEA; border-radius:10px; color:#5B6B6B; font-weight:600; font-size:12px;">No</div>
+          </div>
+        </div></div></div>
+        <div class="wc-figure-caption">Mobile · Step 3/10 — Yes/No pattern</div>
+      </div>
+
+      <div class="wc-figure">
+        <div class="wc-phone"><div class="wc-phone-screen"><div class="wc-notch"></div><div class="wc-screen-pad" style="font-size:11px;">
+          <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+            <span style="font-size:18px; color:#004D50;">&#8592;</span>
+            <span style="font-weight:700; color:#00878E; font-size:13px;">Historia Clínica</span>
+            <div class="wc-avatar" style="margin-left:auto; width:22px; height:22px;"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" fill="#fff"/><path d="M4 20c0-4.4 3.6-7 8-7s8 2.6 8 7" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/></svg></div>
+          </div>
+          <div style="font-size:9.5px; color:#8A9494; margin-bottom:4px;">Tus objetivos · 2 de 10</div>
+          <div style="height:5px; background:#E4EAEA; border-radius:4px; margin-bottom:10px; overflow:hidden;"><div style="width:20%; height:100%; background:#004D50;"></div></div>
+          <div style="font-weight:700; font-size:12px; margin-bottom:8px;">¿Qué objetivos quieres alcanzar?</div>
+          <div style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px;">
+            <div style="padding:6px 9px; border:1.5px solid #00878E; color:#00878E; border-radius:16px; font-size:9.5px; font-weight:600;">Mejorar mi salud actual</div>
+            <div style="padding:6px 9px; border:1.5px solid #00878E; color:#00878E; border-radius:16px; font-size:9.5px; font-weight:600;">Verme y sentirme bien</div>
+            <div style="padding:6px 9px; border:1.5px solid #E4EAEA; color:#5B6B6B; border-radius:16px; font-size:9.5px; font-weight:600;">No lo sé</div>
+          </div>
+          <div style="font-weight:700; font-size:11px; margin-bottom:6px;">¿Cómo consideras tu estado de salud?</div>
+          <div style="border:1.5px solid #E4EAEA; border-radius:10px; padding:9px; color:#9AA5A5; font-size:10px; margin-bottom:12px; display:flex; justify-content:space-between;"><span>Selecciona</span><span>&#9660;</span></div>
+          <div style="font-weight:700; font-size:10.5px; margin-bottom:6px;">Tipo de seguros con los que cuentas</div>
+          <div style="display:flex; gap:6px;">
+            <div style="flex:1; border:1px solid #E4EAEA; border-radius:10px; padding:7px 3px; text-align:center; font-size:8px;">&#129680;<br/>Dental</div>
+            <div style="flex:1; border:1px solid #E4EAEA; border-radius:10px; padding:7px 3px; text-align:center; font-size:8px;">&#128181;<br/>Vida</div>
+            <div style="flex:1; border:1px solid #E4EAEA; border-radius:10px; padding:7px 3px; text-align:center; font-size:8px;">&#10084;&#65039;<br/>Asist.</div>
+          </div>
+        </div></div></div>
+        <div class="wc-figure-caption">Mobile · Step 2/10 — Progressive multi-input</div>
+      </div>
+    </div>
+
+    <div class="wc-gallery">
+      <div class="wc-figure" style="width:100%;">
+        <div class="wc-browser" style="margin:0 auto;">
+          <div class="wc-browser-bar"><span class="wc-dot" style="background:#FF5F57;"></span><span class="wc-dot" style="background:#FEBC2E;"></span><span class="wc-dot" style="background:#28C840;"></span><div class="wc-browser-url">aura.welbecare.com/expediente/historia-clinica</div></div>
+          <div class="wc-browser-body">
+            <table style="width:100%; border-collapse:collapse;"><tr>
+              <td style="width:52px; background:#004D50; padding:16px 0; text-align:center; color:#7FC6C9; font-size:15px; vertical-align:top;">
+                <div style="color:#fff; margin-bottom:18px;">&#8962;</div><div style="margin-bottom:18px;">&#128100;</div><div style="margin-bottom:18px;">&#128203;</div><div style="margin-bottom:18px;">&#128337;</div><div style="margin-bottom:18px;">&#128137;</div><div>&#9881;&#65039;</div>
+              </td>
+              <td style="padding:18px 28px; vertical-align:top;">
+                <table style="width:100%; margin-bottom:14px;"><tr>
+                  <td style="background:#F5F8F8; padding:6px 12px; border-radius:8px; font-size:10.5px; color:#004D50; font-weight:600;">&#128100; Nombre y apellidos del paciente</td>
+                  <td style="background:#F5F8F8; padding:6px 12px; border-radius:8px; font-size:10.5px; color:#004D50; font-weight:600; text-align:center;">Empresa &#9662;</td>
+                  <td style="font-size:10.5px; color:#5B6B6B; text-align:right;">&#128100; Doctor Uso</td>
+                </tr></table>
+                <div style="display:flex; gap:6px; justify-content:center; margin-bottom:16px; font-size:9.5px; color:#9AA5A5; font-weight:700;">
+                  <span style="color:#00878E;">A.H.F</span><span>—</span><span style="color:#00878E;">A.P.P</span><span>—</span><span>A.P.N.P</span><span>—</span><span>Vacunas</span><span>—</span><span>Diagnósticos</span><span>—</span><span>Med.</span>
+                </div>
+                <div style="text-align:center; color:#00878E; font-weight:700; font-size:14px; margin-bottom:16px;">Antecedentes personales patológicos</div>
+                <div style="border:1px solid #E4EAEA; border-radius:10px; padding:12px 16px; margin-bottom:12px;">
+                  <div style="font-size:11px; font-weight:600; margin-bottom:6px;">Alergias a medicamentos o alimentos</div>
+                  <div style="display:flex; gap:14px; font-size:10.5px; color:#4A5555;"><span>&#9675; Sí</span><span>&#9679; No</span></div>
+                </div>
+                <table style="width:100%; border:1px solid #E4EAEA; border-radius:10px; border-collapse:collapse;">
+                  <tr style="background:#F5F8F8;"><td style="padding:7px 12px; font-size:9.5px; font-weight:700; color:#5B6B6B;">Antecedentes</td><td style="padding:7px 12px; font-size:9.5px; font-weight:700; color:#5B6B6B;">Edad</td><td style="padding:7px 12px; font-size:9.5px; font-weight:700; color:#5B6B6B;">¿Tratamiento?</td><td style="padding:7px 12px; font-size:9.5px; font-weight:700; color:#5B6B6B;">Comentarios</td></tr>
+                  <tr style="border-top:1px solid #F0F3F3;"><td style="padding:7px 12px; font-size:10px;">Asma</td><td style="padding:7px 12px; font-size:10px; color:#C7CFCF;">Edad</td><td style="padding:7px 12px; font-size:10px; color:#C7CFCF;">Sí/No</td><td style="padding:7px 12px; font-size:10px; color:#C7CFCF;">Comentarios</td></tr>
+                  <tr style="border-top:1px solid #F0F3F3;"><td style="padding:7px 12px; font-size:10px;">Diabetes</td><td style="padding:7px 12px; font-size:10px; color:#C7CFCF;">Edad</td><td style="padding:7px 12px; font-size:10px; color:#C7CFCF;">Sí/No</td><td style="padding:7px 12px; font-size:10px; color:#C7CFCF;">Comentarios</td></tr>
+                  <tr style="border-top:1px solid #F0F3F3;"><td style="padding:7px 12px; font-size:10px;">Hipertensión</td><td style="padding:7px 12px; font-size:10px; color:#C7CFCF;">Edad</td><td style="padding:7px 12px; font-size:10px; color:#C7CFCF;">Sí/No</td><td style="padding:7px 12px; font-size:10px; color:#C7CFCF;">Comentarios</td></tr>
+                </table>
+                <div style="text-align:right; margin-top:14px;"><span style="background:#F5F8F8; color:#004D50; padding:7px 18px; border-radius:8px; font-size:10.5px; font-weight:600; margin-right:6px;">Regresar</span><span style="background:#004D50; color:#fff; padding:7px 18px; border-radius:8px; font-size:10.5px; font-weight:600;">Continuar</span></div>
+              </td>
+            </tr></table>
+          </div>
+        </div>
+        <div class="wc-figure-caption">Desktop · Doctor portal — structured clinical history (A.P.P.)</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Impact</h2>
+    <ul class="check">
+      <li>Replaced repetitive, verbal intake with a structured, self-service clinical history patients complete once.</li>
+      <li>Gave doctors a standardized, code-based record (ICD-10/CIE-10) instead of starting from scratch.</li>
+      <li>Established reusable form patterns now used across other clinical and enterprise-configuration flows.</li>
+      <li>Became the foundation for enterprise-specific clinical intake, starting with Bimbo's white-label rollout.</li>
+    </ul>
+
+    <h2 class="section-title">UX Principles Applied</h2>
+    <ul class="check">
+      <li>Progressive Disclosure · Recognition rather than Recall · Visibility of System Status</li>
+      <li>Cognitive Load Reduction · Information Density Matched to User Role · Consistency</li>
+    </ul>
+
+    <h2 class="section-title">Learnings</h2>
+    <div class="prose">
+    <p>Designing for two audiences on one data model requires resisting the urge to solve it with a single interface. Holding both without compromising either — while staying tightly aligned with a subject-matter expert instead of running a traditional discovery process — was the real design problem to solve.</p>
+    </div>
+</div>
+
+<div class="case">
+    <div class="case-tag">Case Study 02</div>
+    <h2 class="case-title">Compra de Estudios Médicos</h2>
+    <p class="case-sub">Designing a quota-aware healthcare marketplace for employees and families, inside Welbe's B2B2C ecosystem.</p>
+
+    <div class="meta-grid">
+      <div class="cell"><div class="k">Role</div><div class="v">Senior Product Designer</div></div>
+      <div class="cell"><div class="k">Timeline</div><div class="v">6 days / 48 hours</div></div>
+      <div class="cell"><div class="k">Team</div><div class="v">1 PM, 1 Tech Lead, 1 FE, 1 BE, 1 QA</div></div>
+      <div class="cell"><div class="k">Platforms</div><div class="v">White-label mobile/web app</div></div>
+    </div>
+
+    <h2 class="section-title first">Context</h2>
+    <div class="prose">
+    <p>Welbe operates a B2B2C model: companies purchase health benefits, employees use them, and HR teams get administrative and analytics capabilities. Large enterprise clients, including <b>Bimbo</b> and <b>MetLife</b>, required a new benefits model based on <b>usage quotas</b> — each employee gets a limited number of subsidized consultations or exams, and must be able to purchase additional services directly through the platform once that limit is reached, without depending on Welbe's support team.</p>
+    <p>This required a completely different experience from the existing app, plus digital payments integration via Stripe.</p>
+    </div>
+    <h2 class="section-title">The Challenge</h2>
+    <div class="prose">
+    <p><b>Design question:</b> How might we make benefit quotas, out-of-pocket payment, and appointment booking understandable in one continuous journey — without forcing employees to contact support?</p>
+    </div>
+    <ul class="check">
+      <li>Employees with available quotas, and employees with exhausted quotas.</li>
+      <li>Family members linked to the plan, with individual and family quotas.</li>
+      <li>Free and paid consultations; free and paid exams.</li>
+      <li>Stripe integration, with multiple payment methods available in Mexico (card, bank transfer, OXXO).</li>
+      <li>Payment confirmation, lab confirmation, and post-approval scheduling.</li>
+    </ul>
+    <div class="prose">
+    <p>All of this needed to feel intuitive, even for users who had never used this kind of corporate benefit before.</p>
+    </div>
+    <h2 class="section-title">Discovery</h2>
+    <div class="prose">
+    <p>This project didn't include direct user interviews, but the full discovery process was run in close partnership with business stakeholders.</p>
+    </div>
+    <h4 class="sub-h">Stakeholder alignment</h4>
+    <div class="prose">
+    <p>Met with the PM and business teams to understand the new enterprise clients' specific needs and every rule behind the quota model.</p>
+    </div>
+    <h4 class="sub-h">Existing product analysis</h4>
+    <div class="prose">
+    <p>Audited the legacy app flow end-to-end to identify limitations, friction points, and improvement opportunities before proposing a solution.</p>
+    </div>
+    <h4 class="sub-h">Benchmark</h4>
+    <div class="prose">
+    <p>Researched healthcare platforms and digital-service purchase experiences to understand market patterns for booking and payment journeys.</p>
+    </div>
+    <h4 class="sub-h">Flow mapping</h4>
+    <div class="prose">
+    <p>Structured the full flow architecture in Miro, covering dozens of scenarios related to quotas, payments, lab confirmation, and scheduling.</p>
+    </div>
+    <h4 class="sub-h">AI-assisted organization</h4>
+    <div class="prose">
+    <p>Used Claude to organize requirements, structure flows, and accelerate the first wireframes before prototyping.</p>
+    </div>
+    <h2 class="section-title">Key UX Challenges</h2>
+    <div class="prose">
+    <p>This project carried far more complexity than a typical checkout. It required holding, in one journey:</p>
+    </div>
+    <ul class="check">
+      <li>available vs. exhausted quotas; family benefits; fully covered vs. partially subsidized exams;</li>
+      <li>full out-of-pocket purchase; multiple labs; multiple payment methods; payment and confirmation states.</li>
+    </ul>
+    <div class="prose">
+    <p>In total, the project resulted in approximately <b>45 responsive screens</b>, covering every possible journey scenario.</p>
+    </div>
+    <h2 class="section-title">Design Process</h2>
+    <h4 class="sub-h">Information Architecture</h4>
+    <div class="prose">
+    <p>Structured navigation flows accounting for the different states a user's journey could be in — quota available, exhausted, family-linked, or fully paid.</p>
+    </div>
+    <h4 class="sub-h">User Flows</h4>
+    <div class="prose">
+    <p>Mapped every possible path to guarantee consistency between business rules and user experience.</p>
+    </div>
+    <h4 class="sub-h">Wireframes</h4>
+    <div class="prose">
+    <p>Built low-fidelity wireframes to quickly validate the flow's structure before layering in visual design.</p>
+    </div>
+    <h4 class="sub-h">Interface</h4>
+    <div class="prose">
+    <p>Evolved into high-fidelity interfaces using Welbe's Design System, once the wireframes were validated.</p>
+    </div>
+    <h4 class="sub-h">Prototyping</h4>
+    <div class="prose">
+    <p>Built navigable prototypes for validation with the PM and stakeholders before development began.</p>
+    </div>
+    <h4 class="sub-h">Handoff</h4>
+    <div class="prose">
+    <p>Documented the complete solution and ran full handoff to Engineering, following implementation alongside the technical team.</p>
+    </div>
+    <h2 class="section-title">Design System</h2>
+    <div class="prose">
+    <p>Identified components that didn't yet exist in Welbe's Design System, used them in the flow, and formally incorporated them into the company's shared library: quota cards, benefit cards, discount indicators, payment-status components, exam cards, lab information blocks, and new reusable visual patterns — now used across other products on the platform.</p>
+    </div>
+    <h2 class="section-title">Cross-functional Collaboration</h2>
+    <div class="prose">
+    <p>During project reviews, Product, Engineering, and Design disagreed on the best way to present available quotas to the employee. My proposal prioritized UX principles — recognition over recall, visibility of system status, reduced cognitive load, and clarity on available benefits before purchase.</p>
+    </div>
+    <div class="callout">I presented the reasoning grounded in usability best practices and argued the experience should let the employee immediately understand their situation before starting payment. After discussion, the solution I proposed was approved and shipped to production.</div>
+
+    <div class="wc-gallery">
+      <div class="wc-figure">
+        <div class="wc-phone"><div class="wc-phone-screen"><div class="wc-notch"></div><div class="wc-screen-pad" style="text-align:center; padding-top:60px;">
+          <div style="font-size:10px; color:#00878E; font-weight:700; margin-bottom:10px;">&#10024; ¡Bienvenido a Welbe!</div>
+          <div style="border:1px solid #E4EAEA; border-radius:16px; padding:22px 12px; margin-bottom:14px;">
+            <div style="width:44px; height:44px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:20px; margin:0 auto 10px;">&#128421;&#65039;</div>
+            <div style="font-weight:700; font-size:13px;">Atención Médica</div>
+          </div>
+          <div style="border:1px solid #E4EAEA; border-radius:16px; padding:22px 12px; margin-bottom:14px;">
+            <div style="width:44px; height:44px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:20px; margin:0 auto 10px;">&#128196;</div>
+            <div style="font-weight:700; font-size:13px;">Expediente</div>
+          </div>
+          <div style="border:1px solid #E4EAEA; border-radius:16px; padding:22px 12px;">
+            <div style="width:44px; height:44px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:20px; margin:0 auto 10px;">&#128197;</div>
+            <div style="font-weight:700; font-size:13px;">Citas Consultas y Estudios</div>
+          </div>
+        </div></div></div>
+        <div class="wc-figure-caption">Mobile · Entry point</div>
+      </div>
+
+      <div class="wc-figure">
+        <div class="wc-phone"><div class="wc-phone-screen"><div class="wc-notch"></div><div class="wc-screen-pad">
+          <div style="font-weight:700; color:#00878E; font-size:15px; margin-bottom:12px;">Estudios Médicos</div>
+          <div style="border:1px solid #E4EAEA; border-radius:20px; padding:10px 14px; font-size:11px; margin-bottom:14px; display:flex; gap:6px; align-items:center;">&#128205; <b>Casa:</b> Álvaro Obregón, CDMX</div>
+          <div style="border:1px solid #E4EAEA; border-radius:10px; padding:9px 12px; font-size:10.5px; color:#8A9494; margin-bottom:14px; display:flex; justify-content:space-between;">Buscar por nombre del estudio <span>&#128269;</span></div>
+          <div style="font-size:9.5px; color:#8A9494; letter-spacing:.08em; margin-bottom:10px;">CATEGORÍAS</div>
+          <table style="width:100%; border-collapse:separate; border-spacing:8px;"><tr>
+            <td style="text-align:center; width:33%;"><div style="width:38px; height:38px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:16px; margin:0 auto 6px;">&#9794;&#65039;</div><div style="font-size:9px;">Para Él</div></td>
+            <td style="text-align:center; width:33%;"><div style="width:38px; height:38px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:16px; margin:0 auto 6px;">&#9792;&#65039;</div><div style="font-size:9px;">Para Ella</div></td>
+            <td style="text-align:center; width:33%;"><div style="width:38px; height:38px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:16px; margin:0 auto 6px;">&#129922;</div><div style="font-size:9px;">Análisis de Sangre</div></td>
+          </tr><tr>
+            <td style="text-align:center;"><div style="width:38px; height:38px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:16px; margin:0 auto 6px;">&#129440;</div><div style="font-size:9px;">Covid</div></td>
+            <td style="text-align:center;"><div style="width:38px; height:38px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:16px; margin:0 auto 6px;">&#128147;</div><div style="font-size:9px;">Electrocardiograma</div></td>
+            <td style="text-align:center;"><div style="width:38px; height:38px; border-radius:50%; background:#F0F5F5; display:flex; align-items:center; justify-content:center; font-size:16px; margin:0 auto 6px;">&#128421;&#65039;</div><div style="font-size:9px;">Ultrasonido</div></td>
+          </tr></table>
+        </div></div></div>
+        <div class="wc-figure-caption">Mobile · Category browse</div>
+      </div>
+
+      <div class="wc-figure">
+        <div class="wc-phone"><div class="wc-phone-screen"><div class="wc-notch"></div><div class="wc-screen-pad">
+          <div style="font-weight:700; color:#00878E; font-size:14px; margin-bottom:10px;">Estudios Médicos</div>
+          <div style="font-size:10px; color:#8A9494; margin-bottom:4px;">Buscar estudios médicos · 2 de 3</div>
+          <div style="height:5px; background:#E4EAEA; border-radius:4px; margin-bottom:14px; overflow:hidden;"><div style="width:66%; height:100%; background:#004D50;"></div></div>
+          <div style="border:2px dashed #F0B93A; border-radius:12px; padding:14px;">
+            <div style="font-weight:700; font-size:12.5px; margin-bottom:8px;">Nombre del estudio</div>
+            <div style="display:flex; gap:6px; margin-bottom:10px;">
+              <span class="wc-pill wc-pill-blue">&#8635; Con receta</span><span class="wc-pill wc-pill-yellow">&#9201; Requiere confirmación</span>
+            </div>
+            <div style="font-size:10px; color:#5B6B6B; line-height:1.5; margin-bottom:10px;">Análisis completo de las células sanguíneas para detectar anemia, infecciones o alteraciones hematológicas.</div>
+            <div style="background:#F1EEFB; border-radius:8px; padding:8px 10px; font-size:9.5px; color:#5B3FA8; margin-bottom:8px;"><b>Preparación:</b> no se requiere ayuno.</div>
+            <div style="background:#EAF8EE; border-radius:8px; padding:8px 10px; font-size:9.5px; color:#1D9A4E;"><b>Requiere confirmación:</b> el laboratorio confirmará disponibilidad.</div>
+          </div>
+          <div style="text-align:center; margin-top:14px; background:#004D50; color:#fff; padding:9px; border-radius:10px; font-size:11px; font-weight:700;">+ Añadir estudio</div>
+        </div></div></div>
+        <div class="wc-figure-caption">Mobile · Exam detail</div>
+      </div>
+
+      <div class="wc-figure">
+        <div class="wc-phone"><div class="wc-phone-screen"><div class="wc-notch"></div><div class="wc-screen-pad" style="font-size:10.5px;">
+          <div style="font-weight:700; color:#00878E; font-size:13px; margin-bottom:10px;">Estudios Médicos</div>
+          <div style="border:1px solid #E4EAEA; border-radius:12px; padding:12px;">
+            <div style="font-weight:700; font-size:11.5px; margin-bottom:6px;">Resumen de estudios solicitados</div>
+            <div style="font-size:9px; color:#8A9494; margin-bottom:10px;">Asiste a la sucursal con tu número de folio.</div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:4px;"><span>Chopo - Avenida Revolución</span><span class="wc-pill wc-pill-green">Confirmado</span></div>
+            <div style="color:#5B6B6B; margin-bottom:8px;">Avenida Revolución #1911, CDMX</div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:6px;"><span>Costo del laboratorio</span><b>MX$ 1,550.00</b></div>
+            <div style="display:flex; justify-content:space-between; margin-bottom:8px;"><span>Con Membresía Welbe</span><b style="color:#1D9A4E;">MX$ 0.00</b></div>
+            <div style="background:#EAF8EE; border-radius:8px; padding:7px 10px; font-size:9.5px; color:#1D9A4E; font-weight:700; margin-bottom:10px;">&#10004; Incluido en su beneficio · no pagas nada</div>
+            <div style="border-top:1px solid #F0F3F3; padding-top:8px;">
+              <div style="display:flex; justify-content:space-between;"><span>Examen General de Orina</span><span style="color:#8A9494;">13197848</span></div>
+              <div style="display:flex; justify-content:space-between;"><span>Química Sanguínea 28 El.</span><span style="color:#8A9494;">13197850</span></div>
+            </div>
+          </div>
+        </div></div></div>
+        <div class="wc-figure-caption">Mobile · Quota-covered summary</div>
+      </div>
+
+      <div class="wc-figure">
+        <div class="wc-phone"><div class="wc-phone-screen"><div class="wc-notch"></div><div class="wc-screen-pad" style="background:#EAEAEA; height:100%; display:flex; align-items:center; justify-content:center; margin:-38px -18px -14px; padding:38px 18px 14px;">
+          <div style="background:#fff; border-radius:16px; padding:28px 20px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,.12);">
+            <div style="font-weight:800; font-size:17px; font-style:italic; margin-bottom:14px;">welbe &#128154;</div>
+            <div style="font-weight:800; font-size:14px; margin-bottom:8px;">¡Felicitaciones!</div>
+            <div style="font-size:10.5px; color:#5B6B6B; margin-bottom:16px; line-height:1.5;">Su pago ha sido procesado; pronto recibirá la confirmación de su cita.</div>
+            <div style="background:#004D50; color:#fff; padding:9px; border-radius:10px; font-size:11px; font-weight:700;">Entendido</div>
+          </div>
+        </div></div></div>
+        <div class="wc-figure-caption">Mobile · Payment success</div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Deliverables</h2>
+    <ul class="check">
+      <li>Documented discovery, user flows, information architecture, wireframes, navigable prototypes.</li>
+      <li>~45 responsive screens, new Design System components, technical documentation, full handoff.</li>
+    </ul>
+    <div class="prose">
+    <p>The entire project was delivered in approximately <b>48 hours of work spread across six days</b>.</p>
+    </div>
+    <h2 class="section-title">Impact</h2>
+    <ul class="check">
+      <li>Employees purchase consultations directly through the platform — no more contacting support.</li>
+      <li>Greater transparency on available vs. used quotas; fewer steps during purchase.</li>
+      <li>A simpler, more intuitive payment experience; increased employee autonomy.</li>
+      <li>Reusable components created for future features; fewer support tickets tied to purchases.</li>
+      <li>The flow remains live in production and is still used by the platform's clients today.</li>
+    </ul>
+
+    <h2 class="section-title">UX Principles Applied</h2>
+    <ul class="check">
+      <li>Recognition rather than Recall · Visibility of System Status · Progressive Disclosure</li>
+      <li>Information Hierarchy · Consistency · Error Prevention · Cognitive Load Reduction</li>
+    </ul>
+
+    <h2 class="section-title">Learnings</h2>
+    <div class="prose">
+    <p>This project reinforced the importance of balancing complex business rules with a simple user experience, and demonstrated how UX-grounded decisions can influence Product and Engineering toward more intuitive, sustainable solutions across the whole platform.</p>
+    </div>
+</div>
+
+<div class="case">
+    <div class="case-tag">Case Study 03</div>
+    <h2 class="case-title">Welbe 2.0 Design System</h2>
+    <p class="case-sub">Co-owned and maintained alongside a second Product Designer (Antonio) — the shared foundation every product at Welbe is built on.</p>
+
+    <div class="meta-grid">
+      <div class="cell"><div class="k">Role</div><div class="v">Co-owner &amp; maintainer</div></div>
+      <div class="cell"><div class="k">Team</div><div class="v">2 Product Designers</div></div>
+      <div class="cell"><div class="k">Scope (this file)</div><div class="v">Tokens &amp; Components</div></div>
+      <div class="cell"><div class="k">Structure</div><div class="v">5 linked Figma files</div></div>
+    </div>
+
+    <h2 class="section-title first">Context</h2>
+    <div class="prose">
+    <p>Welbe's Design System spans five linked Figma files — <b>Tokens &amp; Components</b>, <b>Patterns</b>, <b>Modules</b>, <b>Templates &amp; Pages</b>, and <b>Base-flows (WhiteLabel/Aura)</b>. As one of two Product Designers at Welbe, I share ownership of this system with Antonio — together we're responsible for creating and maintaining it as the single source of truth every product surface (App, WhiteLabel/Aura, Backoffice, Doctor and Médicos portals) is built from.</p>
+    <p>This section documents the foundation layer: <b>Tokens &amp; Components</b> — the raw design tokens (color, typography, spacing, radii) and the base component primitives everything else in the system composes from.</p>
+    </div>
+    <h2 class="section-title">A system built for a brand transition</h2>
+    <div class="prose">
+    <p>Every token in the system is versioned across two modes — <b>Welbe 1.0</b> and <b>Welbe 2.0</b> — letting the team evolve the visual language (a shift toward a deeper teal, more saturated brand palette) without breaking any component still referencing the legacy mode. 461 variables across 4 token collections currently sit behind Welbe's entire product surface.</p>
+    </div>
+    <h4 class="sub-h">Color</h4>
+    <div class="prose">
+    <p>A scaled, semantic color architecture: global color ramps (gray, red, pink, purple, cyan, blue, teal, green, yellow, orange, and four brand-specific ramps — main, second, third, complement) each running 50→950, feeding a semantic layer (<code>Wb-bg</code>, <code>Wb-border</code>, <code>Wb-text</code>, plus status colors) so components reference intent ("success", "warning", "muted") rather than a raw hex value.</p>
+    </div>
+    <div class="wc-gallery" style="gap:14px;">
+      <div style="display:flex; flex-wrap:wrap; gap:14px; max-width:900px; justify-content:center;">
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#003035;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">main-brand/900</div></div>
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#648D93;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">main-brand/500</div></div>
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#36CD69;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">second-brand/400</div></div>
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#84F7B2;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">third-brand/400</div></div>
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#6C6CFF;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">complement/400</div></div>
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#8EEF2C;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">green-brand/500</div></div>
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#F2CB05;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">yellow/300</div></div>
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#FC5155;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">red-brand/500</div></div>
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#1B2A2D;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">gray-brand/900</div></div>
+        <div style="text-align:center;"><div style="width:64px; height:64px; border-radius:12px; background:#F6FCFD; border:1px solid #E4EAEA;"></div><div style="font-size:10px; margin-top:6px; color:#5B6B6B;">gray-brand/50</div></div>
+      </div>
+    </div>
+
+    <h4 class="sub-h">Typography</h4>
+    <div class="prose">
+    <p>A single typeface — <b>Inter</b> — for heading, body, and mono roles in Welbe 2.0 (Welbe 1.0 used Montserrat for headings, one of the visual shifts the rebrand token layer absorbed). Nine-step font-size scale, full 100–900 weight range, five line-height steps, five letter-spacing steps.</p>
+    </div>
+    <div style="border:1px solid #E4EAEA; border-radius:12px; padding:20px 24px; max-width:640px; margin-bottom:8px;">
+      <div style="font-weight:900; font-size:36px; color:#1A2E2E; margin-bottom:6px;">Aa</div>
+      <div style="font-size:12px; color:#5B6B6B;">Inter · sizes 10 → 128px · weights 100 → 900 · line-height 18 → 32 · tracking -0.8 → 1.6</div>
+    </div>
+
+    <h4 class="sub-h">Spacing &amp; Radii</h4>
+    <div class="prose">
+    <p>A 4px-based spacing scale (2 → 384px) drives all gaps and padding. Corner radius follows its own scale — <code>none</code> to <code>full</code> (9999px, for pills/avatars) — with three semantic aliases (<code>l1</code>, <code>l2</code>, <code>l3</code>) mapped to specific steps so components reference "level 1 rounding" rather than a raw pixel value.</p>
+    </div>
+    <div class="wc-gallery" style="gap:14px;">
+      <div style="display:flex; gap:14px; align-items:flex-end;">
+        <div style="text-align:center;"><div style="width:36px; height:36px; background:#00878E; border-radius:0;"></div><div style="font-size:9px; color:#5B6B6B; margin-top:6px;">none</div></div>
+        <div style="text-align:center;"><div style="width:36px; height:36px; background:#00878E; border-radius:4px;"></div><div style="font-size:9px; color:#5B6B6B; margin-top:6px;">sm · 4</div></div>
+        <div style="text-align:center;"><div style="width:36px; height:36px; background:#00878E; border-radius:8px;"></div><div style="font-size:9px; color:#5B6B6B; margin-top:6px;">lg · 8</div></div>
+        <div style="text-align:center;"><div style="width:36px; height:36px; background:#00878E; border-radius:16px;"></div><div style="font-size:9px; color:#5B6B6B; margin-top:6px;">2xl · 16</div></div>
+        <div style="text-align:center;"><div style="width:36px; height:36px; background:#00878E; border-radius:32px;"></div><div style="font-size:9px; color:#5B6B6B; margin-top:6px;">4xl · 32</div></div>
+        <div style="text-align:center;"><div style="width:36px; height:36px; background:#00878E; border-radius:9999px;"></div><div style="font-size:9px; color:#5B6B6B; margin-top:6px;">full</div></div>
+      </div>
+    </div>
+
+    <h2 class="section-title">Why this matters</h2>
+    <div class="prose">
+    <p>Every mockup in the two case studies above — the Historia Clínica questionnaire, the doctor's clinical record, the Estudios Médicos purchase journey — is built entirely from this token layer: the same teal scale, the same radius steps, the same type scale. Maintaining it alongside Antonio means every new flow at Welbe starts from a consistent, accessible, on-brand foundation instead of one-off decisions per screen.</p>
+    </div>
+    <p style="font-style:italic; color:#8A9494;">More sections of this Design System (Patterns, Modules, Templates &amp; Pages, Base-flows) to be added as each file is reviewed.</p>
+</div>
+
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span class="fmeta"><a href="work.html">← All work</a></span>
+    <div class="icon-links">
+      <a href="https://www.linkedin.com/in/figueiredoraquel" target="_blank" rel="noopener noreferrer" aria-label="Raquel Figueiredo on LinkedIn (opens in new tab)">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+      </a>
+      <a href="mailto:raquelfigueiredosilva@gmail.com" aria-label="Email Raquel Figueiredo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
